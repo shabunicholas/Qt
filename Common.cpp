@@ -27,7 +27,7 @@ void Common::setInI(const QColor &color)
 {
 	//QString file("tradeprintinfo.ini");
 	const QString file = QString(QCoreApplication::applicationDirPath() + "/tradeprintinfo.ini");
-	/*if (!QFile::exists(file)) {没文件会创建
+	/*if (!QFile::exists(file)) {鏂囦欢涓嶅瓨鍦ㄤ細鑷繁鍒涘缓
 		return;
 	}*/
 	QSettings sett(file, QSettings::IniFormat);
