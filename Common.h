@@ -6,6 +6,9 @@
 
 class My_Style : public QProxyStyle{
 public:
+	My_Style(QObject *parent = nullptr) {
+		setParent(parent);
+	}
 	void drawPrimitive(QStyle::PrimitiveElement element, const QStyleOption *option
 		, QPainter *painter, const QWidget *widget = nullptr)const {
 		if (element == QStyle::PE_FrameFocusRect) {
